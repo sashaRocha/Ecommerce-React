@@ -1,0 +1,42 @@
+*,
+*::after, 
+*::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:  62.5%;
+}
+body{
+    font-size: 1.5rem;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffff;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    background: #004280;
+    padding: 2rem;
+}
+.nav_logo{
+    width: 30px;
+    
+}
+.nav_whislist{
+    width: 35px;
+}
+.nav_menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
