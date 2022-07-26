@@ -1,5 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
+import Cart from "../CartWidget";
+
+
 function Nav () {
 return (
 <nav className="nav">
@@ -28,7 +31,11 @@ return (
         </a>
       </li>
     </ul>
+    <a href="#start">
+       <Cart />
+    </a>
 </nav>
+
 )}
 
 export default Nav;

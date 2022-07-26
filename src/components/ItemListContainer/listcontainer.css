@@ -1,0 +1,21 @@
+.box {
+    border: 8px solid darkblue;
+    width: 400px;
+    height: 400px;
+    margin: 10%;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+  }
+  .box:hover{
+    padding: 10px;
+    border: 1px solid #000;
+    transition: .4s; 
+}
+.placeholder{
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    margin-bottom: 0.5rem;
+}
+    

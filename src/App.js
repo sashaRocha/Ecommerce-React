@@ -1,15 +1,12 @@
-//import logo from './logo.svg';
-//import './App.css';
-
-import Nav from './components/NavBar.js';
-import './NavBar.css';
-
+import Nav from './components/NavBar/NavBar.js';
+import './components/NavBar/NavBar.css';
+import ListContainer from './components/ItemListContainer/index'
+import './components/ItemListContainer/listcontainer.css'
 function App() {
   return (
     <div>
-     
-     <Nav /> 
-    <h2>Bienvenido a mi Ecommerce</h2>
+      <Nav />
+      <ListContainer texto="FAKE LIST"/>
     </div>
    
   );
