@@ -1,12 +1,12 @@
 import Nav from './components/NavBar/NavBar.js';
 import './components/NavBar/NavBar.css';
-import ListContainer from './components/ItemListContainer/index'
-import './components/ItemListContainer/listcontainer.css'
+import ItemListContainer from './components/ItemListContainer/index'
+
 function App() {
   return (
     <div>
       <Nav />
-      <ListContainer texto="FAKE LIST"/>
+      <ItemListContainer nombre="Sasha"/> 
     </div>
    
   );
