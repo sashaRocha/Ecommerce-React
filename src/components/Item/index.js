@@ -1,21 +1,34 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-function Item({ item }){
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
+
+
+function Item({ name, img, price, description }){
     return( 
-      <div className="grid text-center">
-           <div>
-            <Card style={{ width: '30rem' }}>
-              <Card.Img variant="top" src="holder.js/100px180" />
-              <Card.Body>
-                <Card.Title>{item.name}</Card.Title>
-                <Card.Text>
-                  {`Email user : ${item.email}`}    
-                </Card.Text>
-                <Button variant="primary">Mas Informacion</Button>
-              </Card.Body>
-            </Card> 
-            </div>
-            </div>
+      <Container>
+      <Row xs={1} md={2} className="g-4 box">
+      {Array.from({ length: 2 }).map((_, idx) => (
+        <Col>
+          <Card>
+            <Card.Img variant="top" src={img} />
+            <Card.Body>
+              <Card.Title>{name}</Card.Title>
+              <Card.Text>
+                    Precio: ${price}
+              </Card.Text>
+              <Card.Text>
+                    {description}
+              </Card.Text>
+              <Button variant="primary">Ver Detalles</Button>
+            </Card.Body>
+          </Card>
+        </Col>
+      ))}
+    </Row>
+    </Container>
+       
       )
     
 }

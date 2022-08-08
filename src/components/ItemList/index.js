@@ -1,10 +1,11 @@
 import Item from "../Item";
-function ItemList({ items }){
-    console.log(items);
+
+function ItemList({ products }){
+    console.log(products);
     return (
         <div>
-            {items.map((item) => (
-            <Item key={item.id} item={item} />
+            {products?.map((prod) => (
+            <Item key={prod.id} {...prod} />
         ))}
         </div>
     );

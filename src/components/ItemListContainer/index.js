@@ -1,20 +1,24 @@
 import ItemList from "../ItemList";
-import ItemCount from "../ItemCount";
 import {useState, useEffect} from "react";
+import { getProducts } from "../../asyncmock";
 function ItemListContainer({ props }) {
     
-   const [items, setItems] = useState([]);
+   const [products, setProducts] = useState([]);
+
    useEffect( () => {
-    fetch('https://jsonplaceholder.typicode.com/users')
-    .then((response) => response.json())
-    .then((data) => setItems(data))
+      getProducts().then(products => {
+         setProducts(products)
+           })
  }, [])
+ 
+ 
+ 
+ 
  return(
     <div className="box">
      <div>
         <h3>{props}</h3>
-        <ItemList items={items}/>
-        <ItemCount stock="5" initial="1" />
+        <ItemList products={products}/>
      </div>
     </div>
         
