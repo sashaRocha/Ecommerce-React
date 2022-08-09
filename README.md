@@ -1,4 +1,4 @@
-# <h1>TIENDA ONLINE CON REACT-ECOMMERCE</h1>
+# <h1>:red_square:WEB APPLICATION WITH REACT</h1>
 
 :small_red_triangle:The idea of the online store is to be able to have a functional Web Application to be able to make purchases and that the UI is friendly to the user.
 
@@ -18,9 +18,12 @@ React this way provides you with a Local Host [http://localhost:3000](http://loc
 
 Finally all the changes you make on the app will make the page reload.
 
-<h2>Screenshots<h2>
+<h2>:camera:Screenshots<h2>
  
  <p align="center">
- <a href="https://ibb.co/X27kjfK"><img src="https://i.ibb.co/h7B1Lx4/gif-ecommerce-react.gif" alt="gif-ecommerce-react" border="0"></a>
+ 
+ 
+ ![gif-ecommerce-react](https://user-images.githubusercontent.com/90863451/183768210-249f6f6b-9d75-451e-85cd-024f55ef6a43.gif)
+
 </p>
 
