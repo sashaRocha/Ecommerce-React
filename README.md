@@ -1,4 +1,4 @@
-# <strong>TIENDA ONLINE CON REACT-ECOMERCE</strong>
+# <strong>TIENDA ONLINE CON REACT-ECOMMERCE</strong>
 
 :small_red_triangle:The idea of the online store is to be able to have a functional Web Application to be able to make purchases and that the UI is friendly to the user.
 
