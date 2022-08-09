@@ -23,8 +23,8 @@ function ItemCount ({ stock }) {
     return (
       <div id="conteiner">
         <div>{counter}</div>
-        <Button variant="outline-danger" type="button" onClick={increse}>-</Button>
-        <Button variant="outline-danger" type="button" onClick={decrese}>+</Button>
+        <Button variant="outline-danger" type="button" onClick={decrese}>-</Button>
+        <Button variant="outline-danger" type="button" onClick={increse}>+</Button>
         <Button variant="primary" onClick={reset} >Agregar al Carrito</Button>{' '}
       </div>
     );

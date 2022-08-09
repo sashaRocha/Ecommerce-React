@@ -1,15 +1,13 @@
-import ItemCount from './componentes/ItemCount';
+import ItemCount from "../ItemCount";
 
-function ItemDetail({ name, stock }){
-       const addItem = (quantity) =>{
-        console.log(`Agregaste ${quantity} ${name}`)
-       }
-
+function ItemDetail({ name, stock, img}){
+       
     return(
-        <div>
+        <div >
             <h1>{name}</h1>
-            <ItemCount stock={stock} onAdd={addItem}/>
-        </div>
+            <img src={img} alt="preview-product"></img>
+            <ItemCount stock={stock} />
+         </div>
     )
 
 }

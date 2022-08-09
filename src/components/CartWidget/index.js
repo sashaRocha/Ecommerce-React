@@ -1,4 +1,4 @@
-
+import './CartWidget.css';
 function CartWidget () {
     return (
     <div className="cart_icon">
