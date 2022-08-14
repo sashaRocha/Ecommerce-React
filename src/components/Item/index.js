@@ -9,10 +9,10 @@ import { Link } from 'react-router-dom';
 
 function Item({ id,name, img, price, description }){
     return( 
-      <Container>
-      <Row xs={1} md={2} className="g-4">
+      <Container fluid="xxl">
+      <Row xs={5} md={1} className="g-4">
       {Array.from({ length: 2 }).map((_, idx) => (
-        <Col>
+        <Col lg={true} >
           <Card className='box'>
             <Card.Img variant="top" src={img} />
             <Card.Body>

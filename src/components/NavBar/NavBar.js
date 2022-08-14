@@ -11,13 +11,13 @@ function NavBar () {
 return (
 <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" >
   <Container>
-    <Navbar.Brand href="#home"><Link to={`/`}>ECOMMERCE</Link></Navbar.Brand>
+    <Navbar.Brand href="#home"><Link to={`/`} className="links">ECOMMERCE</Link></Navbar.Brand>
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="#features"><Link to="/category/celular">Phone</Link></Nav.Link>
-        <Nav.Link href="#pricing"><Link to="/category/televisores">Televisores</Link></Nav.Link>
-        <Nav.Link href="#pricing"><Link to="/category/notebook">Notebook</Link></Nav.Link>
+        <Nav.Link href="#features"><Link to="/category/celular" className="links">Phone</Link></Nav.Link>
+        <Nav.Link href="#pricing"><Link to="/category/televisores" className="links">Televisores</Link></Nav.Link>
+        <Nav.Link href="#pricing"><Link to="/category/notebook" className="links">Notebook</Link></Nav.Link>
       </Nav>
       <Nav>
         <Nav.Link href="#deets"></Nav.Link>

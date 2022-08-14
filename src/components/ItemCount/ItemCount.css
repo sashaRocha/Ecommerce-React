@@ -1,0 +1,17 @@
+.item-count {
+    display: flex;
+    justify-content: space-between;
+    max-width: 400px;
+    gap: 5px
+}
+
+.item-count > div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 200px;
+    border: 1px solid #f0f0f0;
+    background-color: #ecd3d0;
+    font-weight: bold;
+    color: #9d382d;
+}

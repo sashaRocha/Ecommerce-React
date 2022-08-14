@@ -1,12 +1,12 @@
 .box{
     margin: 10px;
     font-size: 15px;
-    background-color: rgb(224, 126, 125);
     width: 100%;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     align-items:center;
     justify-content:center;
+    background-color: antiquewhite;
 
-}
+} 
