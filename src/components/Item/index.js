@@ -11,7 +11,7 @@ function Item({ id,name, img, price, description }){
     return( 
       <Container fluid="xxl">
       <Row xs={5} md={1} className="g-4">
-      {Array.from({ length: 2 }).map((_, idx) => (
+      {Array.from({ length: 1 }).map((_, idx) => (
         <Col lg={true} >
           <Card className='box'>
             <Card.Img variant="top" src={img} />
@@ -23,9 +23,9 @@ function Item({ id,name, img, price, description }){
               <Card.Text>
                     {description}
               </Card.Text>
-               <Link to={`/detail/${id}`}>
-              <Button variant="primary">Ver Detalles</Button>
-               </Link>
+              <Link to={`/detail/${id}`} >  
+                  <Button variant="primary">Ver Detalles</Button>)
+              </Link>
             </Card.Body>
           </Card>
         </Col>

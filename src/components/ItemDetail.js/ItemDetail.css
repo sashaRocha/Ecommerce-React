@@ -1,0 +1,11 @@
+.item-detail{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+    width: 1000px;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid brown;
+    background-color:chocolate;
+}

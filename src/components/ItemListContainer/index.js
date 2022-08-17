@@ -3,8 +3,9 @@ import {useState, useEffect} from "react";
 import { getProducts } from "../../asyncmock";
 import { getProductsByCategory } from "../../asyncmock";
 import { useParams } from 'react-router-dom';
+import './ItemListContainer.css';
 
-function ItemListContainer({ props }) {
+function ItemListContainer() {
     
    const [products, setProducts] = useState([]);
    const { categoryId } = useParams()
@@ -30,8 +31,17 @@ function ItemListContainer({ props }) {
  return(
     <div className="box">
      <div>
-        <h3>{props}</h3>
+        {/* <h3>{props}</h3> */}
+        {Array.isArray(products) && products.length === 0 ? (
+          
+          <div className="load"> Cargando Productos...</div>
+        
+          ): (
+        
         <ItemList products={products}/>
+      
+      )}
+        
      </div>
     </div>
         

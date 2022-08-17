@@ -1,24 +1,25 @@
 import { useState } from "react";
 import Button from 'react-bootstrap/Button';
 import './ItemCount.css'
-function ItemCount ({ stock }) {
-    const [counter, setCounter] = useState(0);
+function ItemCount ({ onAddItemsToCart,stock , initial}) {
+    const [counter, setCounter] = useState((0));
     
     const increse = () =>{
-        if(counter >= stock){
-            setCounter(counter)
-        }else{
+        if(counter < stock){
+        
             setCounter(counter+1)
         }
     };
     const decrese = () =>{
-        if(counter <= 1){
-            setCounter(counter)
-        }else{
+        if(counter > 1){
+        
             setCounter(counter-1);
         }
     }
-    const onAdd = () => setCounter(0);
+    const onAdd = () => {
+        console.log(`${counter} agregados al carrito!`);
+        onAddItemsToCart(counter);
+    }
     
     
     return (

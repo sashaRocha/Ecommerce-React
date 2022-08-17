@@ -1,0 +1,11 @@
+.load{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    max-width: 500px;
+    border: 2px solid #000;
+    padding: 100px;
+    font-size: 20px;
+    color: brown;
+}
