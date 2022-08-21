@@ -8,7 +8,24 @@
 html{
     font-size: 1.5rem;
 }
-.links{
+.branch{
     text-decoration: none;
-    font-family: 'Oleo Script Swash Caps';
+    color: crimson;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.phone{
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+}
+.tv{
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+}
+.notebook{
+    text-decoration: none;
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
 }

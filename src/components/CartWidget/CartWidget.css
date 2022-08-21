@@ -3,9 +3,10 @@
   align-items: center;
 
 }
-.material-symbols-outlined:hover {
-  background-color:gainsboro;
-  border-radius: 5px;
+.material-symbols-outlined {
+ 
+  
+  text-decoration: none;
 }
 .pulse {
   animation: pulse 3s infinite;

@@ -24,7 +24,7 @@ function Item({ id,name, img, price, description }){
                     {description}
               </Card.Text>
               <Link to={`/detail/${id}`} >  
-                  <Button variant="primary">Ver Detalles</Button>)
+                  <Button variant="primary">Ver Detalles</Button>
               </Link>
             </Card.Body>
           </Card>
