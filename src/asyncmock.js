@@ -1,3 +1,5 @@
+import { DB  } from "./api/APIFirebase"
+import {getDocs,collection} from 'firebase/firestore';
 export const products = [
     { 
         id: '1', 
@@ -41,13 +43,29 @@ export const products = [
     }
   ]
 
-  export const getProducts = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(products)
-        }, 500)
+export const getProducts = () => {
+
+  // referencia a la coleccion que quiero traer
+   
+return new Promise((resolve, reject) => {
+
+
+   const colRef = collection(DB,'Items')
+    getDocs(colRef).then((snapshot) =>{
+        const productosConFormato = snapshot.docs.map((rawDoc) => {
+          return{
+            id: rawDoc.id,
+            ...rawDoc.data()
+          }
+        });
+        console.log('>>Productos',productosConFormato);
+        resolve(productosConFormato)
+          
+    },(error) =>{
+      reject('>> error al traer los datos');
     })
-  }
+})}
+
   
   export const getProductsByCategory = (categoryId) => {
     return new Promise((resolve, reject) => {

@@ -1,17 +1,19 @@
-import React from 'react';
+// import React, { useEffect } from 'react';
 import NavBar from './components/NavBar/NavBar.js';
 import './components/NavBar/NavBar.css';
 import ItemListContainer from './components/ItemListContainer/index'
 import { Routes, Route} from 'react-router-dom';
 import ItemDetailContainer from './components/ItemDetailContainer';
-// import {CartContext} from './context/CartContext';
 import Cart from './components/Cart/Cart.js';
 import CartProvider from './context/CartContext.js';
 
 
-function App() {
-  return (
 
+function App() {
+
+
+  return (
+    
     <div className='container'>
       <CartProvider>
         

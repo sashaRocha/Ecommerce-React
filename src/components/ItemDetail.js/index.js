@@ -8,7 +8,7 @@ import {CartContext} from '../../context/CartContext';
 
 
 
-function ItemDetail({ name, stock, img , initial,id}){
+function ItemDetail({ name, stock, img ,id,description}){
    
    
     
@@ -17,7 +17,7 @@ function ItemDetail({ name, stock, img , initial,id}){
     const { addCartItem } = useContext(CartContext);
 
     const handleOnAdd = (quantity) =>{
-            addCartItem({id, name, quantity})
+            addCartItem({id, name, quantity,img,description})
             console.log("evento recibido",id);
             setProductToCard(quantity);
         };
