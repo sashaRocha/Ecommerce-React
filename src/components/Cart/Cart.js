@@ -5,6 +5,20 @@ import {Link} from 'react-router-dom';
 
 export default function Cart(){
     const {cart} = useContext(CartContext);
+    console.log(cart);
+    const createOrder = () => {
+      
+      let order = {
+        buyer:{
+          name: 'Killua Zoldyck',
+          phone: '1234567',
+          email: 'killua@zoldyck'
+        },
+       items: cart.addCarItem(),
+       total : cart.totalQuantity
+      }
+      console.log(order);
+    }
    return(
       <div>
             <h1>ECOMMERCE</h1>

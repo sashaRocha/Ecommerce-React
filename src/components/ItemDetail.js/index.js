@@ -10,9 +10,7 @@ import {CartContext} from '../../context/CartContext';
 
 function ItemDetail({ name, stock, img ,id,description}){
    
-   
-    
-    const  [productToCart,setProductToCard] = useState(0);
+   const  [productToCart,setProductToCard] = useState(0);
 
     const { addCartItem } = useContext(CartContext);
 

@@ -15,7 +15,7 @@ return (
     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
-        <Nav.Link href="#features"><Link to="/category/celular" className="phone">Phone</Link></Nav.Link>
+        <Nav.Link href="#features"><Link to="/category/celulares" className="phone">Phone</Link></Nav.Link>
         <Nav.Link href="#pricing"><Link to="/category/televisores" className="tv">Televisores</Link></Nav.Link>
         <Nav.Link href="#pricing"><Link to="/category/notebook" className="notebook">Notebook</Link></Nav.Link>
       </Nav>
