@@ -1,5 +1,5 @@
 import Item from "../Item";
-import './ItemList.css';
+
 
 function ItemList({ products }){
     return (

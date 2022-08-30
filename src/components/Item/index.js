@@ -13,7 +13,7 @@ function Item({ id,name, img, price, description }){
       <Row xs={5} md={1} className="g-4">
       {Array.from({ length: 1 }).map((_, idx) => (
         <Col lg={true} >
-          <Card className='box'>
+          <Card border="primary" style={{ width: '18rem' }} className='box'>
             <Card.Img variant="top" src={img} />
             <Card.Body>
               <Card.Title>{name}</Card.Title>
@@ -28,6 +28,7 @@ function Item({ id,name, img, price, description }){
               </Link>
             </Card.Body>
           </Card>
+
         </Col>
       ))}
     </Row>

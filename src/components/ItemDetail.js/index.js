@@ -29,7 +29,7 @@ function ItemDetail({ name, stock, img ,id,description}){
             <h1>{name}</h1>
             <img src={img} alt="preview-product"></img>
             {productToCart === 0 
-                ? <ItemCount  onAddItemsToCart={handleOnAdd} stock={stock}/>
+                ? <div><ItemCount  onAddItemsToCart={handleOnAdd} stock={stock}/></div>
                 : <Link to={'/cart' }>CLICK AQUI PARA IR AL CARRITO</Link>
             }
          </div>

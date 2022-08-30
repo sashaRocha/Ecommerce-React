@@ -1,0 +1,10 @@
+.title{
+   font-family: monospace;
+   text-shadow: 6px 4px 5px blue;
+   font-weight: bold;
+   border: 4px outset #00A4BD;   
+   width:auto;
+   color: #2D3E50;
+   background-color: #698aab;
+   text-align: center;
+}
