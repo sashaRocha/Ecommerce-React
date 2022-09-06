@@ -8,14 +8,14 @@ import {CartContext} from '../../context/CartContext';
 
 
 
-function ItemDetail({ name, stock, img ,id,description}){
+function ItemDetail({ name, stock, img ,id,description,price}){
    
    const  [productToCart,setProductToCard] = useState(0);
 
     const { addCartItem } = useContext(CartContext);
 
     const handleOnAdd = (quantity) =>{
-            addCartItem({id, name, quantity,img,description})
+            addCartItem({id, name, quantity,img,description,price})
             console.log("evento recibido",id);
             setProductToCard(quantity);
         };

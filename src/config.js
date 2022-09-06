@@ -22,26 +22,51 @@ return new Promise((resolve, reject) => {
 
 
 export const getProductsByCategory = async (categoryId) => {
-   
-    const q = query(collection(DB,'Items'),where('category','==',categoryId))
-   
-   const querySnapshot = await getDocs(q);
-   const infoFromFirestore = querySnapshot.docs.map(document => ({
-             id: document.id,
+   const refInfo = collection(DB,'Items');
+
+  const q = query(refInfo, where('categoryId','==',categoryId))
+    
+  const querySnapshot = await getDocs(q);
+  const infoFromFirestore = querySnapshot.docs.map(document => ({
+             
              ...document.data()
    }));
-   return infoFromFirestore;
+   return infoFromFirestore; 
+ 
   }
 
 
-export const getProductById = (id) => {
-    return new Promise((resolve, reject) => {
-      const q = query(collection(DB,'Items'), where('category','==',id))
-      getDocs(q).then((snapshot) => {
-        if(snapshot === 0){
-          console.log('no results');
-        }
-        resolve(q);
-      })
-    })
-  }
+// export const getProductById =  (id) => {
+  // const detailRef = doc(DB,'Items','Ce5lVHNGxIRBOl9tTA8B'); 
+  // const docSnap = await getDoc(detailRef);
+
+  // if(docSnap.exists()){
+
+  //   docSnap.data();
+  // }else{
+  //   console.log('error');
+  // }
+ 
+  // const detailRef = collection(DB,'Items');
+  // const q = query(detailRef, where('ID','==','Ce5lVHNGxIRBOl9tTA8B'))
+  // const querySnapshot = await getDocs(q);
+
+  // const detailFromFirestore = querySnapshot.docs.find(prod => (prod.id === id))
+  // return detailFromFirestore;
+
+        
+  //   return new Promise((resolve, reject) => {
+  //     const detailRef = doc(DB,'Items','Ce5lVHNGxIRBOl9tTA8B'); 
+  
+  //     getDoc(detailRef).then((snapshot) => {
+  //       const detailProduct = snapshot.doc.map((rawDoc) => {
+  //         return{
+            
+  //               ...rawDoc.data()
+  //         }
+  //       });
+  //       resolve(detailProduct);
+       
+  //     })
+  //   })
+  // }

@@ -13,3 +13,13 @@
    display: flex;
    flex-direction: column;
  }
+
+ .cart-sumary{
+   display: flex;
+   flex-direction: row-reverse;
+   align-content: flex-end;
+ }
+.buttom-reset{
+   display: flex;
+   
+}
