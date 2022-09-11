@@ -23,7 +23,7 @@ Finally all the changes you make on the app will make the page reload.
  <p align="center">
  
  
- ![gif-ecommerce-react](https://user-images.githubusercontent.com/90863451/183768210-249f6f6b-9d75-451e-85cd-024f55ef6a43.gif)
+![gif-ecommerce-react](https://user-images.githubusercontent.com/90863451/189536232-d342da1d-6432-484c-a751-35deac4ce4df.gif)
 
 </p>
 
