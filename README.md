@@ -34,3 +34,16 @@ Finally all the changes you make on the app will make the page reload.
 
  </p>
  
+ <h3>:camera:Screenshot: Items and Orders</h3>
+  <p align="center">
+   
+   ![items-from-firebase](https://user-images.githubusercontent.com/90863451/189536978-998b8cd2-f33a-43b5-9841-0d636e526da7.png)
+   
+   ![purchase-order](https://user-images.githubusercontent.com/90863451/189536984-553cd7cf-4a5f-4658-a17f-304d17b2511d.png)
+ 
+ </p>
+
+   
+   
+
+ 
