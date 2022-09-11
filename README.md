@@ -21,7 +21,8 @@ Finally all the changes you make on the app will make the page reload.
 <h2>:camera:View Ecommerce<h2>
  
  <p align="center">
-![gif-ecommerce-react](https://user-images.githubusercontent.com/90863451/189536656-2bda29e3-dd36-4d76-b4e9-0be61785e250.gif)
+     
+  ![gif-ecommerce-react](https://user-images.githubusercontent.com/90863451/189536656-2bda29e3-dd36-4d76-b4e9-0be61785e250.gif)
 
 </p>
 
