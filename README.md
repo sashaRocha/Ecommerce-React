@@ -19,11 +19,11 @@ React this way provides you with a Local Host [http://localhost:3000](http://loc
 Finally all the changes you make on the app will make the page reload.
 
 <h2>:camera:Screenshots<h2>
- 
+ <div>
  <p align="center">
  ![gif-ecommerce-react](https://user-images.githubusercontent.com/90863451/189536232-d342da1d-6432-484c-a751-35deac4ce4df.gif)
 </p>
- 
+ </div>
  <h3>Simulating a pruchase</h3>
 <p align="center">
 
