@@ -27,7 +27,7 @@ Finally all the changes you make on the app will make the page reload.
 
 </p>
 <p align="center">
- Simulating a Purchase
+
  ![gif-ecommerce-react-purchase](https://user-images.githubusercontent.com/90863451/189536428-e2687dae-2827-4392-8e2d-1fb346dcaea5.gif)
  </p>
  
