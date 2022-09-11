@@ -13,7 +13,7 @@ In the project directory, you must use the command:
 
 This way you run the app in development mode/.
 
-React this way provides you with a Local Host [http://localhost:3000](http://localhost:3000)that you can view in your favorite search engine.
+React this way provides you with a Local Host [http://localhost:3000](http://localhost:3000) that you can view in your favorite search engine.
 
 
 Finally all the changes you make on the app will make the page reload.
