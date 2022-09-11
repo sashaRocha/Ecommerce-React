@@ -7,7 +7,7 @@ import './Item.css';
 import { Link } from 'react-router-dom';
 
 
-function Item({ id,name, img, price, description }){
+function Item({ id,name, img, price, description,stock }){
     return( 
       <Container fluid="xxl">
       <Row xs={5} md={1} className="g-4">
@@ -21,8 +21,12 @@ function Item({ id,name, img, price, description }){
                     Precio: ${price}
               </Card.Text>
               <Card.Text>
+                   Stock: {stock}
+             </Card.Text>
+              <Card.Text>
                     {description}
               </Card.Text>
+            
               <Link to={`/detail/${id}`} >  
                   <Button variant="primary">Ver Detalles</Button>
               </Link>

@@ -10,7 +10,7 @@ function CartItem({id,name, img,price,description}){
     const {removeFromCart} = useContext(CartContext);
     return(
 <div>
-    <Card style={{ width: '10rem' }}>
+    <Card style={{ width: '12rem' }}>
         {/* <img src={img} alt="holder-img"></img> */}
         <Card.Img variant="top" src={img} />
         <Card.Body>

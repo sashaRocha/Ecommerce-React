@@ -7,24 +7,22 @@ import './ItemListContainer.css';
 
 
 function ItemListContainer() {
-    
-   const [products, setProducts] = useState([]);
-   
-   const  {categoryId}  = useParams();
-   useEffect(() => {
 
-    setProducts([]);
+const [products, setProducts] = useState([]);
+
+const  {categoryId}  = useParams();
+useEffect(() => {
+
+      setProducts([]);
        
         async function getD() {
           const productInfo = await getProducts(categoryId)
-          console.log(productInfo);
           setProducts(productInfo);
         }
       getD();
       
         async function getI(){
           const productList = await getProductsByCategory(categoryId)
-          console.log(productList);
           setProducts(productList)
         }
       getI();
@@ -33,21 +31,20 @@ function ItemListContainer() {
  
  
  
- return(
+return(
     <div className="box">
      <div>
         {/* <h3>{props}</h3> */}
         {Array.isArray(products) && products.length === 0 ? (
           
-          <div className="load"> Cargando Productos...</div>
+        <div className="load"> Cargando Productos...</div>
         
-          ): (
+        ): (
         
         <ItemList products={products}/>
-      
-      )}
-        
-     </div>
+        )}
+
+      </div>
     </div>
         
     )

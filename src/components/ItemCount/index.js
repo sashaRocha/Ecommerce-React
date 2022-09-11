@@ -4,7 +4,7 @@ import './ItemCount.css'
 
 
 function ItemCount ({ onAddItemsToCart,stock , initial}) {
-    const [counter, setCounter] = useState((0));
+    const [counter, setCounter] = useState((1));
     
     const increse = () =>{
         if(counter < stock){
@@ -19,9 +19,7 @@ function ItemCount ({ onAddItemsToCart,stock , initial}) {
         }
     }
     const onAdd = () => {
-       
-        console.log(`${counter} agregados al carrito!`);
-        onAddItemsToCart(counter); 
+       onAddItemsToCart(counter); 
       
     }
    

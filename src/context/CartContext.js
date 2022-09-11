@@ -5,7 +5,7 @@ export const CartContext = React.createContext();
 export default function CartProvider({children}){
     const[cart,setCart] = useState([]);
     const[totalQuantity, setQuantity] = useState(1);
-    const[totalPrice, setPrice] = useState(Number(1))
+    const[totalPrice, setPrice] = useState(Number(0))
 
     useEffect(() => {
         let totalQuantity = 0;
@@ -18,7 +18,7 @@ export default function CartProvider({children}){
   useEffect(() => {
      let totalPrice = 0;
      cart.forEach(prod =>{
-        totalPrice =  prod.quantity * prod.price;
+        totalPrice += (prod.price * prod.quantity);
      })
      setPrice(totalPrice);
   },[cart]);
