@@ -27,5 +27,10 @@ Finally all the changes you make on the app will make the page reload.
 </p>
 
 
+ <h3>:camera:Simulating a Purchase</h3>
+ <p align="center">
+  
+  ![gif-ecommerce-react-purchase](https://user-images.githubusercontent.com/90863451/189536807-cc7dadeb-c640-4822-952b-e3cf7bd8b78b.gif)
 
+ </p>
  
